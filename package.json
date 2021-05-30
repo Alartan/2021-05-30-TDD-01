@@ -4,7 +4,11 @@
   "description": "",
   "main": "change.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "istanbul cover tests.js",
+    "open-coverage": "open ./coverage/lcov-report/index.html",
+    "start": "http-server -a localhost -p 8001",
+    "docs": "jsdoc change.js",
+    "open-docs": "open ./out/global.html"
   },
   "keywords": [],
   "author": "",
